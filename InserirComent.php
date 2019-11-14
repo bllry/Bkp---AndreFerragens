@@ -5,7 +5,9 @@
     $nota = $_POST['estrela'];
     $coment = $_POST['Coment'];
 
+    echo $id;
     echo $nota;
+    echo $coment;
    
 
 
@@ -20,13 +22,13 @@
 
         mysqli_query($con, $sql);
         
-        echo "<meta http-equiv='refresh' content='0.2; http://localhost/SistemaAndreYgor/inicio.php'>";
+        /*echo "<meta http-equiv='refresh' content='0.2; http://localhost/SistemaAndreYgor/inicio.php'>";*/
         
 
     }else{
         
         echo "<h1>Preencha todos os campos</h1>";
-        echo "<meta http-equiv='refresh' content='0.5; http://localhost/SistemaAndreYgor/inicio.php'>";
+        /*echo "<meta http-equiv='refresh' content='0.5; http://localhost/SistemaAndreYgor/inicio.php'>";*/
         
     }
     

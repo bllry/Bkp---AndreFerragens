@@ -47,6 +47,10 @@
              ?> 
  
 
+           
+           
+
+           
             <div class="col-6 col-md-6 col-lg-3">
             <div class="infosCaixa"> <!-- CAMADA 1 -->
                 <div class="opcoes"> <!--CAMADA 2 -->
@@ -62,9 +66,8 @@
         </div>
 
 
-
-
-
+        
+       
 
       <!----------------- MODAL COMENTE ---------------->
     
@@ -90,30 +93,29 @@
                             
                             <label for="" style="font-weight:bold; text-shadow: 1px 1px 1px #000;color:#002060; font-size:22px;">Nota</label> 
 <!--ÁREA DE AVALIAÇÃO DE ESTRELAS-->
-                       <input type="text" name="id" style="display:none;" value="<?php echo $row['id_prod']; ?>">
-                            <div>
-                            <input type="radio" name="estrela" value="1">
-                            <input type="radio" name="estrela" value="2">
-                            <input type="radio" name="estrela" value="3">
-                            <input type="radio" name="estrela" value="4">
-                            <input type="radio" name="estrela" value="5">
-                        </div>
-                <!-- 
-                          <div method="POST" action="processa.php" enctype="multipart/form-data">
+                       
+                         
+                         <div method="POST" action="processa.php" enctype="multipart/form-data">
                                 <div class="estrelas">
+                                   <input type="text" name="id" style="display:none;" value="<?php echo $row['id_prod']; ?>">
                                     <input type="radio" id="vazio" name="estrela" value="" checked>
+
                                     <label for="estrela1" style="cursor: pointer;"><i class="fa"></i></label>
                                     <input type="radio" id="estrela1" name="estrela" value="1">
+
                                     <label for="estrela2" style="cursor: pointer;"><i class="fa"></i></label>
                                     <input type="radio" id="estrela2" name="estrela" value="2">
+
                                     <label for="estrela3" style="cursor: pointer;"><i class="fa"></i></label>
                                     <input type="radio" id="estrela3" name="estrela" value="3">
+
                                     <label for="estrela4" style="cursor: pointer;"><i class="fa"></i></label>
                                     <input type="radio" id="estrela4" name="estrela" value="4">
+
                                     <label for="estrela5" style="cursor: pointer;"><i class="fa"></i></label>
                                     <input type="radio" id="estrela5" name="estrela" value="5"><br><br>
                                 </div>
-                            </div> -->
+                            </div>
                            
 <!--FIM DA ÁREA DE AVALIAÇÃO DE ESTRELAS-->
               
@@ -198,7 +200,10 @@
                 </div>
               
 
-      <!----------------- MODAL COMENTE ---------------->
+ 
+            
+            
+             <!----------------- MODAL COMENTE ---------------->
     
 <div class="modal fade" id="modalcomente<?php echo $row['id_prod'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -212,26 +217,53 @@
                 <div class="formulario"> <!-- Formulario -->
                        
                        <!-- VERIFICAR LOCAL DE GRAVAÇÃO YGOR -->
-                    <form class="segunda" action="InserirComent.php" method="post"><!-- segunda camada -->
+                    <form class="segunda" action="InserirComent.php" method="POST"><!-- segunda camada -->
                         <div>
                             <img style="float:left;" src="img/parafuso.png" alt=""> <img style="float:right;" src="img/parafuso.png" alt="">
                         </div>
                         <h3 class="titulo">Avalie seu produto</h3>
-                        <!-- <input type="text" name="id" value="<?php $row['id_prod'] ?>" style="display:none;"> -->
                         <img class ="divisao img-fluid" src="img/divisorVert.png" alt="Divisor de Menu"> 
                         <div class="form-group">    
                             
                             <label for="" style="font-weight:bold; text-shadow: 1px 1px 1px #000;color:#002060; font-size:22px;">Nota</label> 
 <!--ÁREA DE AVALIAÇÃO DE ESTRELAS-->
-                        <input type="text" name="id" style="display:none;" value="<?php echo $row['id_prod']; ?>">
-                            <div>
-                            <input type="radio" name="estrela" value="1">
-                            <input type="radio" name="estrela" value="2">
-                            <input type="radio" name="estrela" value="3">
-                            <input type="radio" name="estrela" value="4">
-                            <input type="radio" name="estrela" value="5">
+                       
+                        <div method="POST" action="processa.php" enctype="multipart/form-data">
+                            <div class="estrelas">
+                              
+                               <input type="text" name="id" style="display:none;" value="<?php echo $row['id_prod']; ?>">
+                               
+                                <input type="radio" id="vazio" name="estrela" value="" checked>
+                                    
+                                    <label for="estrela1" style="cursor: pointer;"><i class="fa"></i></label>
+                                    <input type="radio" id="estrela1" name="estrela" value="1">
+                                    
+                                    <label for="estrela2" style="cursor: pointer;"><i class="fa"></i></label>
+                                    <input type="radio" id="estrela2" name="estrela" value="2">
+                                    
+                                    <label for="estrela3" style="cursor: pointer;"><i class="fa"></i></label>
+                                    <input type="radio" id="estrela3" name="estrela" value="3">
+                                    
+                                    <label for="estrela4" style="cursor: pointer;"><i class="fa"></i></label>
+                                    <input type="radio" id="estrela4" name="estrela" value="4">
+                                    
+                                    <label for="estrela5" style="cursor: pointer;"><i class="fa"></i></label>
+                                    <input type="radio" id="estrela5" name="estrela" value="5"><br><br>
+                                    
+                            </div>
                         </div>
-                         <!--    <div method="POST" action="processa.php" enctype="multipart/form-data">
+                         
+                                             
+                        <!-- <input type="text" name="id" style="display:none;" value="   coloque a abertura do php aqui   php echo $row['id_prod']; ?>">
+                            <div>
+                                <input type="radio" name="estrela" value="1">
+                                <input type="radio" name="estrela" value="2">
+                                <input type="radio" name="estrela" value="3">
+                                <input type="radio" name="estrela" value="4">
+                                <input type="radio" name="estrela" value="5">
+                            </div> -->
+                <!-- 
+                          <div method="POST" action="processa.php" enctype="multipart/form-data">
                                 <div class="estrelas">
                                     <input type="radio" id="vazio" name="estrela" value="" checked>
                                     <label for="estrela1" style="cursor: pointer;"><i class="fa"></i></label>
@@ -246,10 +278,13 @@
                                     <input type="radio" id="estrela5" name="estrela" value="5"><br><br>
                                 </div>
                             </div> -->
+                           
 <!--FIM DA ÁREA DE AVALIAÇÃO DE ESTRELAS-->
               
                             <div class="form-goup">
                             <label for="" style="font-weight:bold; text-shadow: 1px 1px 1px #000;color:#002060; font-size:22px;">Deixe seu comentário(opcional)</label> <br>
+                            
+                            
                             <textarea style="box-shadow: 2px 2px 2px #000;" placeholder="Comente aqui" name="Coment" id="" cols="50" rows="5"></textarea>
                             </div>
                             
