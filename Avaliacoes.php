@@ -1,10 +1,6 @@
 <html>
 <?php include "head.php"; ?>
-<script type="text/javascript">
-    alert('Em Manutenção')
 
-
-</script>
 <style>
         
 html{
@@ -110,7 +106,7 @@ html{
                 <table class="table table-hover"  style="overflow:auto;">
                    <thead>
                     <th>#</th>
-                    <th>Nome</th>
+<!--                    <th>Nome</th>-->
                     <th>Comentario</th>
                     <th>Nota</th>
                     <th>Ações</th>
@@ -127,14 +123,14 @@ html{
                      <tr>
 
                     <td><?php echo $comentarios['id'] ?></td>
-                    <td><?php echo $comentarios['nome'] ?></td>
+<!--                    <td><?php //echo $comentarios['nome'] ?></td>-->
                     <td><?php echo $comentarios['Descricao'] ?></td>
                     <td><?php echo $comentarios['avaliacao'] ?></td>
                  
                     <td>
                                                     
-                    <a id="Editar" style="color:orange;margin-right:15%" href="EditarProduto.php/?id=<?php echo $comentarios['id'];?>"><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i></a>
-                    <a style="color:red;" id="Excluir" href="ExcluiUsu.php/?id=<?php echo $comentarios['id']; ?>"><i class="fa fa-trash-o fa-lg" aria-hidden="true"></i></a>
+                    
+                    <a style="color:red;" id="Excluir" href="ExcluiAva.php/?id=<?php echo $comentarios['id']; ?>"><i class="fa fa-trash-o fa-lg" aria-hidden="true"></i></a>
                                   
                     </td>
                     </tr>

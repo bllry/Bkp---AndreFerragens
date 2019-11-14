@@ -1,6 +1,6 @@
 
 
-<h1 style="color:green;">Produto Excluido com sucesso!</h1>
+<h1 style="color:green;">Usuário excluido com sucesso!</h1>
 <?php 
     
     $id_Usu = $_GET["id"];
@@ -25,6 +25,3 @@
     ?>
 
 
-
-</body>
-</html>
