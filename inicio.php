@@ -10,6 +10,7 @@
 <script type="text/javascript" src="scripts/meuscript.js"></script>
 <script type="text/javascript" src="scripts/meuoutroscript.js"></script>
 
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/inicio.css">
     <title>FerragensAndre - Inicio</title>
             
@@ -46,11 +47,6 @@
                 
              ?> 
  
-
-           
-           
-
-           
             <div class="col-6 col-md-6 col-lg-3">
             <div class="infosCaixa"> <!-- CAMADA 1 -->
                 <div class="opcoes"> <!--CAMADA 2 -->
@@ -93,29 +89,31 @@
                             
                             <label for="" style="font-weight:bold;">Avaliação</label> <br>
 <!--ÁREA DE AVALIAÇÃO DE ESTRELAS-->
-                            <input type="radio" name="estrela" value="1" >
-                            <input type="radio" name="estrela" value="2" >
-                            <input type="radio" name="estrela" value="3" >
-                            <input type="radio" name="estrela" value="4" >
-                            <input type="radio" name="estrela" value="5" >
-                           
-<!--
+                          
+
                             <div method="POST" action="processa.php" enctype="multipart/form-data">
                                 <div class="estrelas">
+                                   
                                     <input type="radio" id="vazio" name="estrela" value="" checked>
+                                    
                                     <label for="estrela1" style="cursor: pointer;"><i class="fa"></i></label>
                                     <input type="radio" id="estrela1" name="estrela" value="1">
+                                    
                                     <label for="estrela2" style="cursor: pointer;"><i class="fa"></i></label>
                                     <input type="radio" id="estrela2" name="estrela" value="2">
+                                    
                                     <label for="estrela3" style="cursor: pointer;"><i class="fa"></i></label>
                                     <input type="radio" id="estrela3" name="estrela" value="3">
+                                    
                                     <label for="estrela4" style="cursor: pointer;"><i class="fa"></i></label>
                                     <input type="radio" id="estrela4" name="estrela" value="4">
+                                    
                                     <label for="estrela5" style="cursor: pointer;"><i class="fa"></i></label>
                                     <input type="radio" id="estrela5" name="estrela" value="5"><br><br>
+                                    
                                 </div>
                             </div>
--->
+
 
 <!--FIM DA ÁREA DE AVALIAÇÃO DE ESTRELAS-->
               
@@ -201,8 +199,8 @@
             
             
        <!----------------- MODAL COMENTE ---------------->
-    
-<div class="modal fade" id="modalcomente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                
+<div class="modal fade" id="modalcomente<?php echo $row['id_prod'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             
@@ -224,29 +222,41 @@
                             
                             <label for="" style="font-weight:bold;">Avaliação</label> <br>
 <!--ÁREA DE AVALIAÇÃO DE ESTRELAS-->
-                            <input type="radio" name="estrela" value="1" >
-                            <input type="radio" name="estrela" value="2" >
-                            <input type="radio" name="estrela" value="3" >
-                            <input type="radio" name="estrela" value="4" >
-                            <input type="radio" name="estrela" value="5" >
-                           
+
 <!--
-                            <div method="POST" action="processa.php" enctype="multipart/form-data">
+                            
+        <input type="radio" name="estrela" value="1" >
+        <input type="radio" name="estrela" value="2" >
+        <input type="radio" name="estrela" value="3" >
+        <input type="radio" name="estrela" value="4" >
+        <input type="radio" name="estrela" value="5" >
+
+-->           
+                           <div method="POST" action="processa.php" enctype="multipart/form-data">
+                            
                                 <div class="estrelas">
+                                    
                                     <input type="radio" id="vazio" name="estrela" value="" checked>
-                                    <label for="estrela1" style="cursor: pointer;"><i class="fa"></i></label>
+                                    
+                                    <label for="estrela1" style="cursor:pointer;"><i class="fa"></i></label>
                                     <input type="radio" id="estrela1" name="estrela" value="1">
-                                    <label for="estrela2" style="cursor: pointer;"><i class="fa"></i></label>
+
+                                    <label for="estrela2" style="cursor:pointer;"><i class="fa"></i></label>
                                     <input type="radio" id="estrela2" name="estrela" value="2">
-                                    <label for="estrela3" style="cursor: pointer;"><i class="fa"></i></label>
+
+                                    <label for="estrela3" style="cursor:pointer;"><i class="fa"></i></label>
                                     <input type="radio" id="estrela3" name="estrela" value="3">
-                                    <label for="estrela4" style="cursor: pointer;"><i class="fa"></i></label>
+
+                                    <label for="estrela4" style="cursor:pointer;"><i class="fa"></i></label>
                                     <input type="radio" id="estrela4" name="estrela" value="4">
-                                    <label for="estrela5" style="cursor: pointer;"><i class="fa"></i></label>
+
+                                    <label for="estrela5" style="cursor:pointer;"><i class="fa"></i></label>
                                     <input type="radio" id="estrela5" name="estrela" value="5"><br><br>
+
+
                                 </div>
                             </div>
--->
+
 
 <!--FIM DA ÁREA DE AVALIAÇÃO DE ESTRELAS-->
               
@@ -263,11 +273,12 @@
                         <img style="float:left; margin-top:5%;" src="img/parafuso.png" alt=""> <img style="margin-top:5%; float:right;" src="img/parafuso.png" alt=""> 
                     </form> <!-- segunda camada -->
                 </div> <!-- Formulario -->
-            </div>
+            </div>        
         </div>
     </div>
 </div>
 <!---------------------------- FIM MODAL COMENTE ---------------------->
+          
             <?php }?>
 
 
@@ -275,7 +286,7 @@
             </div>
 
      <?php
-        $contador2 = $contador2 + 1;
+         $contador2 = $contador2 + 1;
         $limitador = $limitador + 4;
           }?>
        
@@ -402,11 +413,6 @@
  
  
  
- 
- 
- 
- 
-  
    
    
     <footer style="color: #fff;border: solid 1px #000;box-shadow: 2px 2px 2px #000;padding: 0.3%;background: #4a4a4a;font-size: 13px;text-align: center;">CNPJ: 13.448.002/0001-90  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Ferragens e Acessórios André Medeiros Ltda</footer>
