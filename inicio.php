@@ -112,6 +112,7 @@
                                     <input type="radio" id="estrela5" name="estrela" value="5"><br><br>
                                     
                                 </div>
+                                
                             </div>
 
 
@@ -238,20 +239,20 @@
                                     
                                     <input type="radio" id="vazio" name="estrela" value="" checked>
                                     
-                                    <label for="estrela1" style="cursor:pointer;"><i class="fa"></i></label>
-                                    <input type="radio" id="estrela1" name="estrela" value="1">
+                                    <label for="estrela6" style="cursor:pointer;"><i class="fa"></i></label>
+                                    <input type="radio" id="estrela6" name="estrela" value="1">
 
-                                    <label for="estrela2" style="cursor:pointer;"><i class="fa"></i></label>
-                                    <input type="radio" id="estrela2" name="estrela" value="2">
+                                    <label for="estrela7" style="cursor:pointer;"><i class="fa"></i></label>
+                                    <input type="radio" id="estrela7" name="estrela" value="2">
 
-                                    <label for="estrela3" style="cursor:pointer;"><i class="fa"></i></label>
-                                    <input type="radio" id="estrela3" name="estrela" value="3">
+                                    <label for="estrela8" style="cursor:pointer;"><i class="fa"></i></label>
+                                    <input type="radio" id="estrela8" name="estrela" value="3">
 
-                                    <label for="estrela4" style="cursor:pointer;"><i class="fa"></i></label>
-                                    <input type="radio" id="estrela4" name="estrela" value="4">
+                                    <label for="estrela9" style="cursor:pointer;"><i class="fa"></i></label>
+                                    <input type="radio" id="estrela9" name="estrela" value="4">
 
-                                    <label for="estrela5" style="cursor:pointer;"><i class="fa"></i></label>
-                                    <input type="radio" id="estrela5" name="estrela" value="5"><br><br>
+                                    <label for="estrela10" style="cursor:pointer;"><i class="fa"></i></label>
+                                    <input type="radio" id="estrela10" name="estrela" value="5"><br><br>
 
 
                                 </div>
