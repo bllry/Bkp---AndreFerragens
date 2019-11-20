@@ -144,7 +144,12 @@ CREATE TABLE `usuarios` (
   `tipo` enum('Comum','Admin', 'AdminMaster') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `usuarios` VALUES(null, 'admin', 'admin', 'admin@gmail.com', '123', 'comum');
+INSERT INTO `usuarios` VALUES(null, 'admin', 'admin', 'admin@gmail.com', SHA1('123'), 'comum'),
+(null, 'Bruno', 'bruno', 'Bruno@gmail.com', SHA1('123'), 'comum'),
+(null, 'Ygor', 'ygor', 'Ygor@gmail.com', SHA1('123'), 'comum'),
+(null, 'Lucas', 'lucas', 'Lucas@gmail.com', SHA1('123'), 'comum'),
+(null, 'Leornardo', 'leonardo', 'Leornardo@gmail.com', SHA1('123'), 'comum'),
+(null, 'Rosangela', 'Rosangela', 'Rosangela@gmail.com', SHA1('123'), 'comum');
 
 --
 -- Estrutura da tabela `Categoria`
